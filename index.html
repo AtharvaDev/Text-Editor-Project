@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
-    <script src='https://cdn.jsdelivr.net/gh/iMrDJAi/UndoRedo.js/src/UndoRedo.js'></script>
+
     <title>Atharva Deshmukh</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
@@ -35,12 +35,12 @@
             <button id="left-align" onclick="alignText(this, 'left')" type="button"  class="align btn btn-light"><i class="fas fa-align-left"></i></button>
             <button id="center-align" onclick="alignText(this, 'center')" type="button"  class="align btn btn-light"><i class="fas fa-align-center"></i></button>
             <button id="right-align"  onclick="alignText(this, 'right')" type="button"  class="align btn btn-light"><i class="fas fa-align-right"></i></button>
+            <input class="color-apply" type="color" onchange="chooseColor(this)" id="myColor"> 
+
             <!-- test -->
-            <button class="btn btn-light" onclick="makeRedo(this)"><i class="fas fa-undo"></i></button>
-            <button class="btn btn-light" onclick="makeUndo(this)"><i class="fas fa-redo"></i></button>
+            
             <button class="btn btn-light" onclick="document.execCommand('insertOrderedList', false, null);"><insertOrderedList></insertOrderedList></button>
             <button class="btn btn-light" onclick="document.execCommand('insertUnorderedList',false, null)"><insertUnorderedList></insertUnorderedList></button>    
-            <input class="color-apply" type="color" onchange="chooseColor()" id="myColor"> 
 
 
             <!-- test ends -->

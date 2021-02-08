@@ -1,4 +1,3 @@
-const txtHistory = new window.UndoRedojs(5);
 
 
 function updateText(){
@@ -55,7 +54,6 @@ function alignText(elem, alignType){
 }
 
 
-
-function makeRedo(elem) {
-
+function chooseColor(elem) {
+  document.getElementById('text-output').style.color = elem.value
 }
