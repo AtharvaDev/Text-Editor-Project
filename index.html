@@ -14,7 +14,19 @@
         <h1 class="banner p-3 text-primary">TextEditor</h1>
         <div class="row">
           <div class="col">
-            <select class="btn btn-light dropdown-toggle" id="input-font" class="input"  onchange="changeFont(this);">
+              <!-- font size start -->
+            <select class="btn btn-light dropdown-toggle sel" id="fontSize" onchange="changeSize(this)">
+              <option value="50%">1</option>      
+              <option value="80%">2</option>
+              <option value="100%" selected>3</option>
+              <option value="120%">4</option>
+              <option value="140%">5</option>
+              <option value="160%">6</option>
+              <option value="180%">7</option>
+              <option value="200%">8</option>
+            </select>
+            <!-- font size end -->
+            <select class="btn btn-light dropdown-toggle sel" id="input-font" class="input"  onchange="changeFont(this);">
               <option value="Arial">Arial</option>
               <option value="Helvetica">Helvetica</option>
               <option value="Times New Roman">Times New Roman</option>
@@ -35,6 +47,7 @@
             <button id="left-align" onclick="alignText(this, 'left')" type="button"  class="align btn btn-light"><i class="fas fa-align-left"></i></button>
             <button id="center-align" onclick="alignText(this, 'center')" type="button"  class="align btn btn-light"><i class="fas fa-align-center"></i></button>
             <button id="right-align"  onclick="alignText(this, 'right')" type="button"  class="align btn btn-light"><i class="fas fa-align-right"></i></button>
+
             <input class="color-apply" type="color" onchange="chooseColor(this)" id="myColor"> 
 
             <!-- test -->

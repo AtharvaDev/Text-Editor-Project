@@ -4,13 +4,15 @@
   padding: 10px;
   word-wrap: break-word;
   text-align: left;
+  font-family: Arial;
+  /* font-size: 150%; */
 }
 
 .color-apply{
   height: 38px;
   width: 40px;
-  position: absolute;
   padding: 2px;
+  vertical-align: bottom;
 }
 
 #text-input {
@@ -33,4 +35,9 @@
 .underline {
   text-decoration: underline;
 }
+
+.sel{
+  height: 30px;
+}
+
 

@@ -1,5 +1,4 @@
 
-
 function updateText(){
   let text = document.getElementById('text-input').value;
   document.getElementById('text-output').innerText = text;
@@ -56,4 +55,9 @@ function alignText(elem, alignType){
 
 function chooseColor(elem) {
   document.getElementById('text-output').style.color = elem.value
+}
+
+function changeSize(elem) {
+  document.getElementById('text-output').style.fontSize =elem.value;
+  console.log(elem.value)
 }
